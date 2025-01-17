@@ -1,0 +1,33 @@
+services:
+  postgres:
+    image: postgres:14
+    environment:
+      POSTGRES_DB: portfolio_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  
+  server:
+    build: ./server
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@postgres:5432/portfolio_db
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3001:3000"
+    depends_on:
+      - server
+
+volumes:
+  postgres_data:
