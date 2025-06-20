@@ -1,16 +1,13 @@
-FROM node:16
+FROM node:23
 
-WORKDIR /app
+WORKDIR /server-app
 
-COPY package*.json ./
+COPY server/package.json ./
+
 RUN npm install
 
-COPY . .
+COPY server/ .
 
-RUN npm install -g typescript
-
-RUN tsc
-
-EXPOSE 3000
+EXPOSE 4000
 
 CMD ["npm", "run", "dev"]

@@ -1,0 +1,9 @@
+.nav-box {
+  margin-top: 8px;
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  transition: all 0.3s ease;
+  z-index: 10;
+}

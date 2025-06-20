@@ -1,33 +1,24 @@
 services:
-  postgres:
-    image: postgres:14
-    environment:
-      POSTGRES_DB: portfolio_db
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+  client:
+    build:
+      context: ./
+      dockerfile: client/Dockerfile
     ports:
-      - "5432:5432"
+      - "5173:5173"
+    volumes:
+      - ./client/src:/client-app/src
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - VITE_HOST=0.0.0.0 
   
   server:
-    build: ./server
-    environment:
-      - DATABASE_URL=postgresql://postgres:password@postgres:5432/portfolio_db
+    build:
+      context: ./
+      dockerfile: ./server/Dockerfile
     ports:
-      - "3000:3000"
-    depends_on:
-      - postgres
+      - "4000:4000"
     volumes:
-      - ./server:/app
-      - /app/node_modules
-
-  frontend:
-    build: ./frontend
-    ports:
-      - "3001:3000"
-    depends_on:
-      - server
-
-volumes:
-  postgres_data:
+      - ./server/:/server-app
+    env_file:
+      - .env
+    # environment:
