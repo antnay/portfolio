@@ -2,15 +2,16 @@
 
 @theme {
   --font-nav: 'Roboto', 'sans-serif';
-  --color-primary: var(--color-neutral-900);
-  --color-secondary: var(--color-stone-300);
-  --color-text: var(--color-red-50);
+  /* --color-primary: var(--color-neutral-900); */
+  /* --color-secondary: var(--color-stone-300); */
+  /* --color-text: var(--color-red-50); */
+  /* --color-text: oklch(97% 0 0); */
+  /* Neutral and blue */
+  --color-primary: var(--color-red-50); 
+  --color-secondary: #3667f6;
+  --color-text: #3667f6;
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
-  /* --color-primary: oklch(97% 0 0); */
-  /* --color-secondary: #3667f6; */
-  /* --color-text: oklch(97% 0 0); */
-  /* --ease-fluid: cubic-bezier(0.3, 0, 0, 1); */
 }
 
 @utility util-select-glow {

@@ -11,14 +11,14 @@ services:
       - CHOKIDAR_USEPOLLING=true
       - VITE_HOST=0.0.0.0 
   
-  server:
-    build:
-      context: ./
-      dockerfile: ./server/Dockerfile
-    ports:
-      - "4000:4000"
-    volumes:
-      - ./server/:/server-app
-    env_file:
-      - .env
+  # server:
+  #   build:
+  #     context: ./
+  #     dockerfile: ./server/Dockerfile
+  #   ports:
+  #     - "4000:4000"
+  #   volumes:
+  #     - ./server/:/server-app
+  #   env_file:
+  #     - .env
     # environment:

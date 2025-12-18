@@ -45,10 +45,10 @@
     align-items: center;
   }
 
-  .carousel-item img {
+  /* .carousel-item img {
     max-height: 180px;
     max-width: 100%;
     object-fit: contain;
     border-radius: 4px;
-  }
+  } */
 </style>

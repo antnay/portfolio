@@ -2,8 +2,9 @@
   import ProjectCard from '$lib/components/project-card/ProjectCard.svelte';
 </script>
 
-<div>
-  <div class="m-4 flex flex-col flex-wrap max-h-screen max-w-fit gap-2">
+<div class="self-center">
+  <!-- <div class="m-4 flex max-h-screen max-w-fit flex-col flex-wrap gap-2"> -->
+  <div class="m-8 grid grid-cols-4 gap-2">
     <ProjectCard
       project="WorksheetIQ"
       description="Website for University of Washington Tacoma student facilitators to find, 
@@ -17,7 +18,7 @@
       description="A social and marketplace platform designed for 
         university students to buy, sell, and trade wares safely and efficiently."
       github="https://github.com/TechStartupClub/UMarket"
-      link="https://github.com/TechStartupClub/UMarket"
+      link=""
       stack={['Typescript', 'Node.js', 'React', 'PostgreSQL', 'SupaBase', 'OAuth']}
     />
     <ProjectCard

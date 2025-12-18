@@ -16,7 +16,7 @@
 </script>
 
 <div
-  class="card bg-primary border-secondary m-0.5 inline-flex h-7 items-center gap-2 rounded-lg border-2 p-2"
+  class="card bg-primary border-secondary m-0.5 inline-flex h-7 items-center gap-2 rounded-lg border-1 p-2"
 >
   <Icon icon={stackIcon} class="text-secondary" />
   <p class="text-secondary text-sm leading-none">{name}</p>

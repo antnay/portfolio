@@ -1,11 +1,9 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
-
-  // export let src;
   export let name;
-  let imageSrc = null;
+  let imageSrc: any = null;
 
-  async function loadImage(name) {
+  async function loadImage(name: string) {
     try {
       const module = await import(`$lib/assets/images/${name}.png`);
       return module.default;
@@ -22,9 +20,9 @@
   }
 </script>
 
-{#if name}
+{#if imageSrc}
   <!-- svelte-ignore a11y_missing_attribute -->
-  <img src={imageSrc} class="rounded-xl max-w-full place-content-center object-fit" />
-{:else}
-  <div>Loading...</div>
+  <div class="my-1.5 flex items-center">
+    <img src={imageSrc} class="object-fit h-40 w-auto items-center rounded-xl" />
+  </div>
 {/if}
