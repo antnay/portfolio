@@ -1,6 +1,25 @@
+:root {
+    --bg-primary: #202044;
+    --bg-secondary: #7676ff;
+    --bg-tertiary: #00002a;
+    --text-primary: #764242;
+    --text-secondary: #5858e2;
+    --accent-primary: #ff86fb;
+    --accent-secondary: #00be75;
+    --link-primary: #00ffff;
+    --link-visited: #00cccc;
+    --border-primary: #003366;
+    --white: #ffffff;
+}
+
 body {
-    background-color: #000033;
-    color: #cccccc;
+    background-color: var(--bg-primary);
+    background-image: url('bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-primary);
     font-family: "Courier New", Courier, monospace;
     margin: 0;
     padding: 20px;
@@ -11,54 +30,62 @@ section.about,
 section.projects {
     width: 800px;
     margin: 0 auto 20px auto;
-    border: 2px solid #003366;
+    border: 2px solid var(--border-primary);
     padding: 15px;
-    background-color: #000022;
+    background-color: var(--bg-secondary);
 }
 
 h1 {
     text-align: center;
     font-family: "Courier New", Courier, monospace;
-    color: #ffcc00;
+    color: var(--accent-primary);
     text-transform: uppercase;
     letter-spacing: 5px;
-    border-bottom: 2px solid #ffcc00;
+    border-bottom: 2px solid var(--accent-primary);
     padding-bottom: 10px;
     margin-bottom: 20px;
-    text-shadow: 0 0 5px #ff9900;
+    text-shadow: 0 0 5px var(--accent-secondary);
 }
 
 h2 {
-    color: #ff9900;
-    border-bottom: 1px solid #003366;
+    color: var(--accent-secondary);
+    border-bottom: 1px solid var(--border-primary);
     padding-bottom: 5px;
 }
 
 a {
-    color: #00ffff;
+    color: var(--link-primary);
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #ffffff;
-    text-shadow: 0 0 5px #00ffff;
+    color: var(--white);
+    text-shadow: 0 0 5px var(--link-primary);
 }
 
 a:visited {
-    color: #00cccc;
+    color: var(--link-visited);
 }
 
 /* Project cards */
 .projects div {
-    border: 1px solid #003366;
+    border: 1px solid var(--border-primary);
     padding: 15px;
     margin-bottom: 15px;
-    background-color: #00002a;
+    background-color: var(--bg-tertiary);
 }
 
 .projects div:hover {
-    border-color: #ffcc00;
+    border-color: var(--accent-primary);
+}
+
+.projects div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid var(--border-primary);
 }
 
 p {
@@ -67,9 +94,9 @@ p {
 }
 
 footer {
-    color: #666699;
+    color: var(--text-secondary);
     text-align: center;
     margin-top: 40px;
-    border-top: 1px solid #003366;
+    border-top: 1px solid var(--border-primary);
     padding-top: 10px;
 }
