@@ -1,27 +1,27 @@
 :root {
     --bg-primary: #202044;
-    --bg-secondary: #7676ff;
-    --bg-tertiary: #00002a;
-    --text-primary: #e2d1d9;
+    --bg-secondary: #d59cfd;
+    --bg-tertiary: #1b670a;
+    --text-primary: #ffffff;
     --text-secondary: #5858e2;
-    --accent-primary: #2ad009;
-    --accent-secondary: #00be75;
-    --link-primary: #00ffff;
-    --link-visited: #00cccc;
+    --accent-primary: #518831;
+    --accent-secondary: #ffffff;
+    --link-primary: #ff0000;
+    --link-visited: #ff4a4a;
     --border-primary: #003366;
     --white: #ffffff;
 }
 
 body {
     background-color: var(--bg-primary);
-    background-image: url('bg.png');
-    background-size: cover;
+    background-image: url('bg3.png');
+    background-size: auto;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     color: var(--text-primary);
     font-family: "Courier New", Courier, monospace;
-    margin: 0;
+    margin: 2;
     padding: 20px;
 }
 
@@ -41,6 +41,7 @@ h1 {
     color: var(--accent-primary);
     text-transform: uppercase;
     letter-spacing: 5px;
+    font-size: 25pt;
     border-bottom: 2px solid var(--accent-primary);
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -89,7 +90,7 @@ a:visited {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.4;
 }
 
