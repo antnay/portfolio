@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--bg-primary);
-    background-image: url('bg3.png');
+    background-image: url('bg3.webp');
     background-size: auto;
     background-attachment: fixed;
     background-position: center;
@@ -82,8 +82,9 @@ a:visited {
 }
 
 .projects div img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
+    max-height: 450px;
     display: block;
     margin: 15px auto;
     border: 1px solid var(--border-primary);
