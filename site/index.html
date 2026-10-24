@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#1f1f1f">
+<title>Projects | Anthony Naydyuk</title>
+<meta name="description" content="Projects by Anthony Naydyuk.">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="prefetch" href="/about/">
+<script type="speculationrules">{"prerender":[{"urls":["/about/"],"eagerness":"eager"}]}</script>
+<style>
+:root{--bg:#1f1f1f;--fg:#e8e4da;--dim:#a29e94;--rule:#3d3c39;--tab:#2a2a29;--link:#a88ead;--visited:#d49b8a}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--bg)}
+body{margin:0 auto;max-width:44rem;padding:2.5rem 1rem 4rem;background:var(--bg);color:var(--fg);font:17px/1.6 "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif}
+a{color:var(--link);text-underline-offset:.15em}
+a:visited{color:var(--visited)}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+.skip{position:absolute;left:-999px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.skip:focus{left:1rem;top:1rem;background:var(--bg);padding:.3rem .6rem}
+.mono,nav,.stack,.meta span,.contact{font-family:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;font-size:.8rem}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.4rem 1rem}
+h1{font-size:2rem;line-height:1.15;margin:0;font-weight:normal}
+.contact{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+nav ul{list-style:none;display:flex;gap:.25rem;margin:1.6rem 0 2rem;padding:0;border-bottom:1px solid var(--rule)}
+nav a{display:block;padding:.35rem .9rem;margin-bottom:-1px;border:1px solid transparent;border-radius:3px 3px 0 0;text-decoration:none;color:var(--dim)}
+nav a:visited{color:var(--dim)}
+nav a:hover{color:var(--fg);background:var(--tab)}
+nav a[aria-current=page]{color:var(--fg);background:var(--bg);border-color:var(--rule) var(--rule) var(--bg)}
+h2{font-size:.85rem;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin:2.6rem 0 1.2rem}
+h2:first-child,h2.sr+article{margin-top:0}
+h3{font-size:1.15rem;margin:0}
+h3 a:visited{color:var(--link)}
+p{margin:.35rem 0}
+ul{padding-left:1.2rem}
+li{margin:.2rem 0}
+article{margin-bottom:2.2rem}
+.meta{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;column-gap:1rem;color:var(--dim)}
+.meta p{margin:0;font-style:italic}
+
+.stack{list-style:none;display:flex;flex-wrap:wrap;padding:0;margin:.4rem 0 0;color:var(--dim)}
+.stack li{margin:0}
+.stack li+li::before{content:"\00b7"/"";padding:0 .5rem}
+img{display:block;max-width:100%;height:auto;margin-top:1rem;border:1px solid var(--rule);border-radius:3px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+<div class="top">
+<h1>Anthony Naydyuk</h1>
+<ul class="contact" aria-label="Contact">
+<li><a href="https://github.com/antnay">github</a></li>
+<li><a href="https://linkedin.com/in/anthonynaydyuk/">linkedin</a></li>
+<li><a href="mailto:antnayed@gmail.com">email</a></li>
+</ul>
+</div>
+<nav aria-label="Pages">
+<ul>
+<li><a href="/" aria-current="page">projects</a></li>
+<li><a href="/about/">about</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="main">
+<h2 class="sr">Projects</h2>
+
+<article>
+<h3><a href="https://github.com/antnay/denis">Denis</a></h3>
+<p>A high-throughput asynchronous DNS proxy that performs caching, blocklist enforcement, and real-time query analytics.</p>
+<ul class="stack" aria-label="Stack"><li>Rust</li><li>Monoio</li><li>Tokio</li><li>Axum</li><li>PostgreSQL</li><li>Kafka</li><li>ClickHouse</li><li>Docker</li></ul>
+</article>
+
+<article>
+<h3>Drone</h3>
+<p>A native macOS client for Subsonic and Navidrome music servers, for browsing and listening to your own music collection.</p>
+<ul class="stack" aria-label="Stack"><li>Swift</li><li>SwiftUI</li><li>SwiftData</li><li>AVFoundation</li></ul>
+</article>
+
+<article>
+<h3>SetLib</h3>
+<p>A site for University of Washington Tacoma student facilitators to find, create, and share worksheets.</p>
+<ul class="stack" aria-label="Stack"><li>Go</li><li>React</li><li>PostgreSQL</li><li>Redis</li><li>S3</li></ul>
+</article>
+
+<article>
+<h3><a href="https://github.com/antnay/tcss445-project">Husky Watch</a></h3>
+<p>Interactive crime data visualization, heatmaps, and safety analytics for the University of Washington Tacoma campus.</p>
+<ul class="stack" aria-label="Stack"><li>Svelte</li><li>Go</li><li>PostgreSQL</li></ul>
+</article>
+
+<article>
+<h3><a href="https://github.com/TechStartupClub/UMarket">UMarket</a></h3>
+<p>A social marketplace for university students to buy, sell, and trade safely and efficiently.</p>
+<ul class="stack" aria-label="Stack"><li>TypeScript</li><li>Node</li><li>React</li><li>PostgreSQL</li></ul>
+</article>
+
+<article>
+<h3>UHealth</h3>
+<p>A diagnostic tool that uses machine learning to analyze chest X-rays and identify respiratory illnesses. 2nd place of 20 teams at an AI hackathon.</p>
+<ul class="stack" aria-label="Stack"><li>Python</li><li>Flask</li><li>TensorFlow</li><li>PostgreSQL</li><li>Docker</li></ul>
+</article>
+
+<article>
+<h3><a href="https://github.com/antnay/session">Session</a></h3>
+<p>A command-line tmux session manager with fzf integration for quickly creating and switching between sessions.</p>
+<ul class="stack" aria-label="Stack"><li>Rust</li></ul>
+<img src="/img/session.webp" width="444" height="191" alt="Terminal showing Session's fuzzy finder listing project directories" loading="lazy" decoding="async">
+</article>
+
+<article>
+<h3><a href="https://github.com/antnay/pomodoro">pomodoro</a></h3>
+<p>A pomodoro timer that lives in the macOS menu bar.</p>
+<ul class="stack" aria-label="Stack"><li>Swift</li><li>SwiftUI</li></ul>
+<img src="/img/pomodoro.webp" width="518" height="405" alt="macOS menu bar showing a 24:56 countdown with a dropdown of timer settings" loading="lazy" decoding="async">
+</article>
+
+<article>
+<h3>MyMaps</h3>
+<p>An iOS app that integrates with Google My Maps for creating and editing maps with custom markers and geographic data.</p>
+<ul class="stack" aria-label="Stack"><li>Swift</li><li>SwiftUI</li></ul>
+</article>
+
+<article>
+<h3><a href="https://github.com/antnay/cwol">CWOL</a></h3>
+<p>A Wake-on-LAN client for the terminal.</p>
+<ul class="stack" aria-label="Stack"><li>C</li><li>SQLite</li></ul>
+</article>
+</main>
+
+<script>if("serviceWorker"in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")})</script>
+</body>
+</html>
