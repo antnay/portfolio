@@ -8,8 +8,6 @@
 <title>Projects | Anthony Naydyuk</title>
 <meta name="description" content="Projects by Anthony Naydyuk.">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-<link rel="prefetch" href="/about/">
-<script type="speculationrules">{"prerender":[{"urls":["/about/"],"eagerness":"eager"}]}</script>
 <style>
 :root{--bg:#1f1f1f;--fg:#e8e4da;--dim:#a29e94;--rule:#3d3c39;--tab:#2a2a29;--link:#a88ead;--visited:#d49b8a}
 *{box-sizing:border-box}
@@ -55,24 +53,25 @@ img{display:block;max-width:100%;height:auto;margin-top:1rem;border:1px solid va
 <div class="top">
 <h1>Anthony Naydyuk</h1>
 <ul class="contact" aria-label="Contact">
-<li><a href="https://github.com/antnay">github</a></li>
-<li><a href="https://linkedin.com/in/anthonynaydyuk/">linkedin</a></li>
+<li><a href="https://github.com/antnay" target="_blank" rel="noopener">github</a></li>
+<li><a href="https://linkedin.com/in/anthonynaydyuk/" target="_blank" rel="noopener">linkedin</a></li>
 <li><a href="mailto:antnayed@gmail.com">email</a></li>
 </ul>
 </div>
 <nav aria-label="Pages">
 <ul>
-<li><a href="/" aria-current="page">projects</a></li>
-<li><a href="/about/">about</a></li>
+<li><a href="/" data-page="projects" aria-current="page">projects</a></li>
+<li><a href="/about/" data-page="about">about</a></li>
 </ul>
 </nav>
 </header>
 
 <main id="main">
+<section data-page="projects">
 <h2 class="sr">Projects</h2>
 
 <article>
-<h3><a href="https://github.com/antnay/denis">Denis</a></h3>
+<h3><a href="https://github.com/antnay/denis" target="_blank" rel="noopener">Denis</a></h3>
 <p>A high-throughput asynchronous DNS proxy that performs caching, blocklist enforcement, and real-time query analytics.</p>
 <ul class="stack" aria-label="Stack"><li>Rust</li><li>Monoio</li><li>Tokio</li><li>Axum</li><li>PostgreSQL</li><li>Kafka</li><li>ClickHouse</li><li>Docker</li></ul>
 </article>
@@ -90,13 +89,13 @@ img{display:block;max-width:100%;height:auto;margin-top:1rem;border:1px solid va
 </article>
 
 <article>
-<h3><a href="https://github.com/antnay/tcss445-project">Husky Watch</a></h3>
+<h3><a href="https://github.com/antnay/tcss445-project" target="_blank" rel="noopener">Husky Watch</a></h3>
 <p>Interactive crime data visualization, heatmaps, and safety analytics for the University of Washington Tacoma campus.</p>
 <ul class="stack" aria-label="Stack"><li>Svelte</li><li>Go</li><li>PostgreSQL</li></ul>
 </article>
 
 <article>
-<h3><a href="https://github.com/TechStartupClub/UMarket">UMarket</a></h3>
+<h3><a href="https://github.com/TechStartupClub/UMarket" target="_blank" rel="noopener">UMarket</a></h3>
 <p>A social marketplace for university students to buy, sell, and trade safely and efficiently.</p>
 <ul class="stack" aria-label="Stack"><li>TypeScript</li><li>Node</li><li>React</li><li>PostgreSQL</li></ul>
 </article>
@@ -108,14 +107,14 @@ img{display:block;max-width:100%;height:auto;margin-top:1rem;border:1px solid va
 </article>
 
 <article>
-<h3><a href="https://github.com/antnay/session">Session</a></h3>
+<h3><a href="https://github.com/antnay/session" target="_blank" rel="noopener">Session</a></h3>
 <p>A command-line tmux session manager with fzf integration for quickly creating and switching between sessions.</p>
 <ul class="stack" aria-label="Stack"><li>Rust</li></ul>
 <img src="/img/session.webp" width="444" height="191" alt="Terminal showing Session's fuzzy finder listing project directories" loading="lazy" decoding="async">
 </article>
 
 <article>
-<h3><a href="https://github.com/antnay/pomodoro">pomodoro</a></h3>
+<h3><a href="https://github.com/antnay/pomodoro" target="_blank" rel="noopener">pomodoro</a></h3>
 <p>A pomodoro timer that lives in the macOS menu bar.</p>
 <ul class="stack" aria-label="Stack"><li>Swift</li><li>SwiftUI</li></ul>
 <img src="/img/pomodoro.webp" width="518" height="405" alt="macOS menu bar showing a 24:56 countdown with a dropdown of timer settings" loading="lazy" decoding="async">
@@ -128,12 +127,73 @@ img{display:block;max-width:100%;height:auto;margin-top:1rem;border:1px solid va
 </article>
 
 <article>
-<h3><a href="https://github.com/antnay/cwol">CWOL</a></h3>
+<h3><a href="https://github.com/antnay/cwol" target="_blank" rel="noopener">CWOL</a></h3>
 <p>A Wake-on-LAN client for the terminal.</p>
 <ul class="stack" aria-label="Stack"><li>C</li><li>SQLite</li></ul>
 </article>
+</section>
+
+<section data-page="about" hidden>
+<h2>Experience</h2>
+
+<article>
+<h3>Software Engineer Intern</h3>
+<div class="meta"><p>University of Washington SET, Tacoma, WA</p><span><time datetime="2025-06">Jun 2025</time> &ndash; <time datetime="2025-09">Sep 2025</time></span></div>
+<ul>
+<li>Engineered SetLib, a high-concurrency worksheet sharing platform, using a modular monolith architecture in Go to deliver sub-100ms latency.</li>
+<li>Architected a stateless JWT authentication system with Redis-backed session invalidation, supporting hierarchical RBAC for students, instructors, and administrators.</li>
+<li>Optimized PostgreSQL query performance through strategic indexing and Redis caching, eliminating redundant joins and reducing database load during peak usage.</li>
+</ul>
+</article>
+
+<article>
+<h3>Vice President &amp; Backend Lead</h3>
+<div class="meta"><p>UW Tech Startup Club</p><span><time datetime="2025-01">Jan 2025</time> &ndash; <time datetime="2026-03">Mar 2026</time></span></div>
+<ul>
+<li>Led 5+ developers to deliver 2 concurrent projects on schedule, establishing technical roadmaps and code review protocols that reduced code defects by 40%.</li>
+<li>Trained 10+ junior engineers through weekly workshops on backend architecture and system design, with 5 members advancing to lead project contributions.</li>
+<li>Implemented Agile workflows using GitHub Projects, establishing sprint cadences and issue tracking for two concurrent projects.</li>
+<li>Helped create and organize the UWT Hackathon, securing sponsorships and managing logistics for 50+ participants.</li>
+</ul>
+</article>
+
+<h2>Education</h2>
+
+<article>
+<h3>University of Washington</h3>
+<div class="meta"><p>B.S. Computer Science and Systems, Tacoma, WA</p><span><time datetime="2024-09">Sep 2024</time> &ndash; <time datetime="2026-03">Mar 2026</time></span></div>
+<p>Coursework: Operating Systems, Distributed Systems, Data Structures &amp; Algorithms, Database Systems.</p>
+</article>
+</section>
 </main>
 
-<script>if("serviceWorker"in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")})</script>
+<script>
+(function(){
+if("serviceWorker"in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")});
+var titles={projects:"Projects | Anthony Naydyuk",about:"About | Anthony Naydyuk"};
+var paths={"/":"projects","/index.html":"projects","/about/":"about","/about/index.html":"about"};
+var sections=document.querySelectorAll("#main section[data-page]");
+var tabs=document.querySelectorAll("nav a[data-page]");
+function render(page){
+for(var i=0;i<sections.length;i++)sections[i].hidden=sections[i].dataset.page!==page;
+for(var j=0;j<tabs.length;j++){
+if(tabs[j].dataset.page===page)tabs[j].setAttribute("aria-current","page");
+else tabs[j].removeAttribute("aria-current");
+}
+document.title=titles[page];
+}
+for(var k=0;k<tabs.length;k++){
+tabs[k].addEventListener("click",function(e){
+if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;
+e.preventDefault();
+var href=this.getAttribute("href");
+if(location.pathname!==href)history.pushState({page:this.dataset.page},"",href);
+render(this.dataset.page);
+scrollTo(0,0);
+});
+}
+addEventListener("popstate",function(){render(paths[location.pathname]||"projects")});
+})();
+</script>
 </body>
 </html>
