@@ -8,9 +8,6 @@
 /index.html
   Cache-Control: public, max-age=0, must-revalidate
 
-/about/*
-  Cache-Control: public, max-age=0, must-revalidate
-
 /sw.js
   Cache-Control: no-cache
 
