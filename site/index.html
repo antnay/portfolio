@@ -13,7 +13,7 @@
 :root{--bg:#1f1f1f;--fg:#e8e4da;--dim:#a29e94;--rule:#3d3c39;--tab:#2a2a29;--link:#a88ead}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;background:var(--bg)}
-body{margin:0 auto;max-width:44rem;padding:2.5rem 1rem 4rem;background:var(--bg);color:var(--fg);font:17px/1.6 "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif}
+body{margin:0 auto;max-width:44rem;padding:2.5rem 1rem 4rem;background:var(--bg);color:var(--fg);font:16px/1.65 Helvetica,"Helvetica Neue",Arial,"Liberation Sans",system-ui,sans-serif}
 a{color:var(--link);text-underline-offset:.15em}
 a:visited{color:var(--link)}
 a:hover{text-decoration-thickness:2px}
@@ -42,6 +42,9 @@ section{margin-bottom:2.2rem}
 .stack{list-style:none;display:flex;flex-wrap:wrap;padding:0;margin:.4rem 0 0;color:var(--dim)}
 .stack li{margin:0}
 .stack li+li::before{content:"\00b7"/"";padding:0 .5rem}
+.skills{display:grid;grid-template-columns:auto 1fr;gap:.55rem 1.4rem;margin:0 0 2.2rem}
+.skills dt{color:var(--dim)}
+.skills dd{margin:0}
 img{display:block;max-width:100%;height:auto;margin-top:1rem;border:1px solid var(--rule);border-radius:3px}
 </style>
 </head>
@@ -117,6 +120,16 @@ img{display:block;max-width:100%;height:auto;margin-top:1rem;border:1px solid va
 </article>
 
 <article data-page="about" hidden>
+<h2>Skills</h2>
+<dl class="skills">
+<dt>Languages</dt>
+<dd>Rust, Go, Java, JS/TS, Swift, Zig</dd>
+<dt>Frameworks</dt>
+<dd>Axum, Tokio, Gin, Spring Boot, Node, React, Svelte</dd>
+<dt>Tools &amp; Platforms</dt>
+<dd>SQL, Docker, Redis, Linux</dd>
+</dl>
+
 <h2>Experience</h2>
 
 <section>
