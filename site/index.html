@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#1f1f1f">
-<title>Projects | Anthony Naydyuk</title>
-<meta name="description" content="Projects by Anthony Naydyuk.">
+<title>Anthony Naydyuk's Portfolio</title>
+<meta name="description" content="Anthony Naydyuk's portfolio: software projects, experience, and education.">
+<meta property="og:site_name" content="Anthony Naydyuk's Portfolio">
+<meta property="og:title" content="Anthony Naydyuk's Portfolio">
 <meta name="author" content="Anthony Naydyuk">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
 <style>
@@ -54,7 +56,7 @@ img{display:block;max-width:100%;height:auto;margin-top:1rem;border:1px solid va
 <h1>Anthony Naydyuk</h1>
 <ul class="contact" aria-label="Contact">
 <li><a href="https://github.com/antnay" target="_blank" rel="noopener">github</a></li>
-<li><a href="https://linkedin.com/in/anthonynaydyuk/" target="_blank" rel="noopener">linkedin</a></li>
+<li><a href="https://linkedin.com/in/anthonynaydyuk" target="_blank" rel="noopener">linkedin</a></li>
 <li><a href="mailto:antnayed@gmail.com">email</a></li>
 </ul>
 </div>
@@ -71,9 +73,8 @@ img{display:block;max-width:100%;height:auto;margin-top:1rem;border:1px solid va
 <h2 class="sr">Projects</h2>
 
 <h3><a href="https://github.com/antnay/denis" target="_blank" rel="noopener">Denis</a></h3>
-<p>A high-throughput asynchronous DNS proxy that performs caching, blocklist enforcement, and real-time query analytics.</p>
+<p>A very high throughput DNS proxy with caching, blocklist, and analytics. I got 5.5 million queries per second on an i7-13800 during a stress test.</p>
 <ul class="stack" aria-label="Denis tech stack"><li>Rust</li><li>Monoio</li><li>Tokio</li><li>Axum</li><li>PostgreSQL</li><li>Kafka</li><li>ClickHouse</li><li>Docker</li></ul>
-
 <h3>init</h3>
 <p>A simple minimal linux init system.</p>
 <ul class="stack" aria-label="init tech stack"><li>Rust</li></ul>
@@ -166,7 +167,7 @@ img{display:block;max-width:100%;height:auto;margin-top:1rem;border:1px solid va
 <script>
 (function(){
 if("serviceWorker"in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")});
-var titles={projects:"Projects | Anthony Naydyuk",about:"About | Anthony Naydyuk"};
+var titles={projects:"Anthony Naydyuk's Portfolio",about:"About | Anthony Naydyuk's Portfolio"};
 var sections=document.querySelectorAll("#main [data-page]");
 var tabs=document.querySelectorAll("nav a[data-page]");
 function current(){return location.hash==="#about"?"about":"projects"}

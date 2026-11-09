@@ -1,4 +1,4 @@
-var CACHE = "v3";
+var CACHE = "v4";
 var ASSETS = ["/", "/favicon.png"];
 
 self.addEventListener("install", function (e) {
